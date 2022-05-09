@@ -15,7 +15,7 @@ train_data_path = "./data/drugLibTrain_raw.tsv" # please use relative path like 
 test_data_path = "./data/drugLibTest_raw.tsv" # please use relative path like this
 
 def activation_function(layer):
- 
+
 
 def derivation_of_activation_function(signal):
 
@@ -31,9 +31,8 @@ def derivation_of_loss_function(true_labels, probabilities):
 
 def forward_pass(data):
 
-# [hidden_layers] is not an argument, but it is up to you how many hidden layers to implement.
-# so replace it with your desired hidden layers 
-def backward_pass(input_layer, [hidden_layers] , output_layer, loss): 
+# [hidden_layers] is not an argument, so replace it with your desired hidden layers
+def backward_pass(input_layer, [hidden_layers], output_layer, loss): 
 
 
 def train(train_data, train_labels, valid_data, valid_labels):
@@ -48,7 +47,7 @@ def train(train_data, train_labels, valid_data, valid_labels):
 			backward_pass(data, [hidden_layers], predictions, loss_signals)
 			loss = loss_function(labels, predictions)
 
-			if index % 2000 == 0: # at each 2000th sample, we run validation set to see our model's improvements
+			if index % 400 == 0: # at each 400th sample, we run validation set to see our model's improvements
 				accuracy, loss = test(valid_data, valid_labels)
 				print("Epoch= "+str(epoch)+", Coverage= %"+ str(100*(index/len(train_data))) + ", Accuracy= "+ str(accuracy) + ", Loss= " + str(loss))
 
