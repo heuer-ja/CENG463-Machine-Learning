@@ -31,6 +31,7 @@ def derivation_of_loss_function(true_labels, probabilities):
 
 def forward_pass(data):
 
+
 # [hidden_layers] is not an argument, so replace it with your desired hidden layers
 def backward_pass(input_layer, [hidden_layers], output_layer, loss): 
 
