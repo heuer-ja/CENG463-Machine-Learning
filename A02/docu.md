@@ -1,0 +1,2 @@
+- sigmoid() is used for activation_function() for hidden layers because it is statet in the assignment 
+- reLU() is used for activation_function() for output layers because it is a linear function and it is a regression problem (softmax only for classification) 
