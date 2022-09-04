@@ -1,5 +1,5 @@
 # CENG-463-ML 
 Assignments for IYTE/IZTECH Machine Learning Course (CENG 463) in 2022, Spring term.
 
-Assignment #01 - Maximum Likelihood Estimaton
-Assignment #02 - Neural Network from scratch
+1. Assignment  - Maximum Likelihood Estimaton
+2. Assignment  - Neural Network from scratch
